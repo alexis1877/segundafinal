@@ -1,0 +1,33 @@
+<!--Vuleve a carrito-->
+
+<!--Muestra productos para añadirlos a carrito-->
+<h2 class="form__title">Agrega al carrito</h2>
+
+<!--<form #formTemplate="ngForm" (ngSubmit)="obtengoidform(formTemplate)">-->
+<form>
+    <div class="form-group row ">
+        <label for="nombre " class="col-sm-2 col-fomr-label ">Nombre producto:</label>
+        <div class="col-sm-10 ">
+            <input type="text " id="username " name="nombre " class="form__input " placeholder="Nombre producto " ngModel required />
+            <!--<label for="nombre " class="form__label ">Nombre:</label>-->
+            <span class="form_line "></span>
+        </div>
+    </div>
+    <!--<input type="text" name="nombre" placeholder="Nombre de mascota" [(ngModel)]="mascotaModel.nombre"> //-->
+    <!--<br><br>-->
+
+    <button type="submit">Guardar</button>
+</form>
+
+<div class="text-center ">
+    <p> </p>
+    <p>volver al carrito </p><a href="agregar ">Volver Carrito</a>
+</div>
+
+
+<p>_____________________________________________</p>
+<p>ABAJO NO TOMAT EN CUENTA por ahora</p>
+
+<div>
+    <button (click)="imprimeprod()" class="btn btn-info">Pruebas </button>
+</div>

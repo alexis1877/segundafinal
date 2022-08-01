@@ -1,0 +1,129 @@
+<!--carrito de compras-->
+
+<!--
+<div>
+  <button (click)="mostrar()" class="btn btn-info">Ver Carrito </button>
+</div>
+
+<div>
+  <button (click)="imprimeprod()" class="btn btn-info">Pruebas </button>
+</div>
+-->
+<!--Ve el carrito-->
+<div class="container">
+  <div class="card">
+      <div>
+          <h3 class="text-center">Carrito de compras</h3>
+      </div>
+      <!--da al boton ver carrito-->
+      <div class="card-body">
+          <table class="table table-hover">
+              <thead>
+                  <tr class="text-center">
+                      <th scope="col">Nombre</th>
+                      <!---->
+                      <th scope="col">Nombre_producto</th>
+                      <!---->
+                      <th scope="col">Precio</th>
+                      <!---->
+                      <th scope="col">Descripcion</th>
+                      <!---->
+                      <th scope="col">Cantidad</th>
+                      <!---->
+                  </tr>
+              </thead>
+              <tbody class="table table-hover">
+                  <tr *ngFor="let i of dato">
+                      <td>{{i.nombre}}</td>
+                      <td>{{i.nombre_producto}}</td>
+                      <td>{{i.precio_producto}}</td>
+                      <td>{{i.descripbr_producto}}</td>
+                      <td>{{i.cantidad}}</td>
+
+                      <td>
+                          <div>
+                              <button (click)="eliminarprod(i.id_venta)" class="btn btn-danger">Eliminar
+                                  <!--<i class= "far far-trash-alt"></i>-->
+                              </button>
+                          </div>
+                      </td>
+                      <td>
+                          <!--Agregar-->
+                          <div>
+
+                              <form>
+                                  <div class="form-group row">
+                                      <label for="inputPassword" class="col-sm-2 col-form-label"></label>
+                                      <div class="col-sm-10">
+                                          <input type="password" class="form-control" id="inputPassword" placeholder="Cantidad">
+                                      </div>
+                                      <button class="btn btn-info">Cantidad
+                                  <!--<i class= "far far-trash-alt"></i>-->
+                              </button>
+                                  </div>
+                              </form>
+                          </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+<!--
+      <div class="text-center">
+          <button class="btn btn-info"> Generar Total </button>
+          <li class="list-group-item list-group-item-action pointer ">
+              <p>Total </p>
+          </li>
+      </div>
+      Agregar prodcuto
+      <div class="text-center">
+          <p> </p>
+          <p>Agregar otro producto </p><a href="agregaproducto ">Añadir</a>
+      </div>
+      -->
+  </div>
+</div>
+<!--
+<div class="card-body ">
+  <table class="table table-hover ">
+      <thead>
+          <tr class="text-center ">
+              <th scope="col ">Producto</th>
+
+              <th scope="col ">Precio</th>
+
+              <th scope="col ">Descripcion</th>
+
+              <th scope="col ">Imagen</th>
+
+          </tr>
+      </thead>
+      <tbody class="table table-hover ">
+          <tr *ngFor="let i of productos ">
+              <td>{{i.nombre_producto}}</td>
+              <td>{{i.precio_producto}}</td>
+              <td>{{i.descripbr_producto}}</td>
+              <td>{{i.imagen}}</td>
+              <td>
+                  <div>
+                      <form (ngSubmit)="obtenercantidad(formTemplate)" #formTemplate="ngForm">
+                          <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Cantidad inserta</label>
+                          <div class="form-group row">
+                              <input type="text" class="form-control" id="input1" name="cant" ngModel required placeholder="Enter email">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+
+                      </form>
+
+                      <button class="btn btn-info ">Agregar
+                          <i class= "far far-trash-alt "></i>
+                      </button>
+                  </div>
+              </td>
+
+          </tr>
+      </tbody>
+  </table>
+
+  Da a el boton cantidad
+</div>-->
